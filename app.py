@@ -559,7 +559,7 @@ The output is visualized on an interactive Gaza map.
 # ---- Tab 3 (KEEP)
 with tab3:
     if not run:
-        st.info("اختاري project types والbudget ثم اضغطي **Generate** من الsidebar.")
+        st.info("project types budget**Generate** idebar.")
     else:
         st.markdown("<div class='card'><b>Top-K Recovery Plans</b><br><span class='small-muted'>We generate multiple strategies so decision-makers can choose under uncertainty.</span></div>", unsafe_allow_html=True)
 
@@ -650,7 +650,7 @@ with tab3:
 
 # ---- Tab 4 (KEEP)
 with tab4:
-    st.subheader("Project Visuals (for PPT & Demo Screenshots)")
+    st.subheader("Project Visuals")
     st.markdown("<div class='card'><span class='small-muted'>Use these visuals to strengthen storytelling and make the demo memorable.</span></div>", unsafe_allow_html=True)
 
     if show_masterplan:
@@ -664,7 +664,7 @@ with tab4:
 
         colV3, colV4 = st.columns(2)
         with colV3:
-            st.markdown("#### Zone Map (Need Heat Zones)")
+            st.markdown("#### Zone Map")
             show_image_if_exists(ASSETS["zone_map"], caption="Zone Map — Priority Areas")
         with colV4:
             st.markdown("#### Recovery Timeline")

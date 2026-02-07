@@ -199,9 +199,19 @@ with st.sidebar:
     st.subheader("Quantum Roads (QAOA) Controls")
     q_budget = st.slider(
     "Road Reconstruction Budget (relative units)",
-    3, 10, 5, 1
+    min_value=3,
+    max_value=10,
+    value=6,
+    step=1
 )
-    q_lambda = st.slider("Budget Penalty (λ)", 1, 20, 5, 1)
+    
+    q_lambda = st.slider(
+    "Budget Penalty (λ)",
+    min_value=5,
+    max_value=25,
+    value=12,
+    step=1
+)
     q_gamma = st.slider("QAOA γ", 0.0, 3.0, 0.8, 0.05)
     q_beta = st.slider("QAOA β", 0.0, 3.0, 0.7, 0.05)
 
